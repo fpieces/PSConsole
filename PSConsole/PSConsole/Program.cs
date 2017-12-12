@@ -87,16 +87,19 @@ namespace PSConsole
             bool AddParameters = true;
             while (AddParameters)
             {
+                //add parameter name
                 Console.Write("Parameter Name (Enter for None): ");
                 var ParameterName = Console.ReadLine();
                 if (ParameterName != "")
                 {
+                    //add parameter value
                     Console.Write("Parameter Value: ");
                     var ParameterValue = Console.ReadLine();
                     ps.AddParameter(ParameterName, ParameterValue);
                 }
                 else
                 {
+                    //Parameter name is blank, break while...
                     AddParameters = false;
                 }
             }
@@ -106,32 +109,39 @@ namespace PSConsole
         }
 
 
-
+        //takes a raw string and executes as is...
         private static void RunScript()
         {
             PowerShell ps = PowerShell.Create();
             Console.WriteLine("Enter raw PowerShell: ");
             var PowerShellText = Console.ReadLine();
+            //adds the script and executes.
             ps.AddScript(PowerShellText);
 
             Console.Clear();
             ExecutePowerShell(ps);
         }
 
+        //runs raw script text from the internet using Web Request class.
         private static void RunWebRequest()
         {
+            //gets the web address where the raw string is hosted.
             Console.WriteLine("Enter web address for script: ");
             var Uri = Console.ReadLine();
             try
             {
+                //creates the web request
                 var Request = WebRequest.Create(Uri);
                 var WebResponse = Request.GetResponse();
                 var ResponseStream = WebResponse.GetResponseStream();
                 var Reader = new System.IO.StreamReader(ResponseStream);
                 var Results = Reader.ReadToEnd();
+
                 var ps = PowerShell.Create();
+                //adds the script and executes
                 ps.AddScript(Results);
 
+                Console.Clear();
                 ExecutePowerShell(ps);
 
                 Console.WriteLine(Results);
