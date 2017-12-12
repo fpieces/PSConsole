@@ -1,0 +1,10 @@
+C:\Users\Justin\source\repos\PSConsole\PSConsole\obj\Debug\PSConsole.csprojResolveAssemblyReference.cache
+C:\Users\Justin\source\repos\PSConsole\PSConsole\obj\Debug\PSConsole.csproj.CoreCompileInputs.cache
+C:\Users\Justin\source\repos\PSConsole\PSConsole\bin\Debug\PSConsole.exe.config
+C:\Users\Justin\source\repos\PSConsole\PSConsole\bin\Debug\PSConsole.exe
+C:\Users\Justin\source\repos\PSConsole\PSConsole\bin\Debug\PSConsole.pdb
+C:\Users\Justin\source\repos\PSConsole\PSConsole\obj\Debug\PSConsole.exe
+C:\Users\Justin\source\repos\PSConsole\PSConsole\obj\Debug\PSConsole.pdb
+C:\Users\Justin\source\repos\PSConsole\PSConsole\bin\Debug\System.Management.Automation.dll
+C:\Users\Justin\source\repos\PSConsole\PSConsole\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\Users\Justin\source\repos\PSConsole\PSConsole\bin\Debug\System.Management.Automation.xml
